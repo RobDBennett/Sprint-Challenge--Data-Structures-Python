@@ -39,6 +39,11 @@ class LinkedList:
         return False
 
     def reverse_list(self, node, prev=None):
+        """
+        Method for reversing the link and then changes the pointers to the 
+        reverse of the original linked list.
+        """
+
         if node is not None:
             if node.get_next() == None:
                 self.head = node
